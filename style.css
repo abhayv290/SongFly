@@ -1,0 +1,201 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+   
+  
+}
+.upper{
+    background-color: rgb(234, 233, 233);
+    border-bottom: 4px solid rgb(172, 169, 169);
+    height: 75px;
+    position: sticky;
+    top: 0;
+    z-index: 2;
+}
+
+.upper nav ul{
+    display: flex;
+    list-style: none;
+    /* margin: 20px; */
+}
+.upper nav ul li{
+    margin: 20px;
+    /* padding: 5px; */
+}
+#inp{
+    padding: 10px;
+    border: solid green 1px;
+    border-radius: 50px;
+    width: 40vw;
+    margin-left: 5vw;
+}
+
+.brand{
+   margin: 10px;
+}
+#logo{
+    position: relative;
+    top: -20px;
+    font-family: fantasy;
+    color: rgb(1, 48, 48);
+    font-size: 1.5rem;
+  }
+
+  
+  .brdr{
+    border: 3px solid rgb(11, 193, 174);
+    border-radius: 6px;
+    background-color: rgb(10, 164, 38);
+    padding: 5px;
+}
+
+
+.bottom nav ul {
+    display: flex;
+    list-style-type: none;
+    padding:20px 40px;
+    color: rgb(2, 2, 39);
+    font-weight: bolder;
+
+}
+.bottom nav ul li{
+    margin-left: 20px;
+}
+.bottom nav ul li:hover{
+    border-bottom: 3px solid red;
+    cursor: pointer;
+}
+
+
+.musicbar{
+    height: 80px;
+    position: sticky;
+    bottom: 0;
+    display: flex;
+    align-items: center; 
+     justify-content: center;
+    /* background-color: rgb(95, 159, 218); */
+    background-image: radial-gradient(white,rgb(2, 87, 120));
+    /* border-top: 3px solid green; */
+    flex-direction: column;
+}
+#myprogressbar{
+    width: 100%;
+    position: relative;
+    top: -20px;
+    cursor: pointer;
+    accent-color: rgb(233, 24, 135);
+}
+
+.icon{
+    font-size: 35px;
+}
+.icon i{
+    width: 5vw;
+}
+
+.container{
+    min-height: 100vh;
+    font-family:'Times New Roman', Times, serif;
+    color: rgb(25, 64, 81);
+    margin: 10px 30px 0 30px;
+    
+}
+
+
+.titl{
+    height: 250px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    background-image: linear-gradient(red,rgb(248, 99, 99));
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    border: 1px solid red;
+}
+.titl img{
+    height: 170px;
+    margin:20px;
+   
+}
+.trend h1{
+    font-size:100px;
+    color:antiquewhite;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+.songlist{
+  background-image: linear-gradient(rgb(138, 29, 29), grey);
+   height: 130vh;
+   border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+
+}
+
+.songlist ul{
+    background-size: cover;
+    /* background-color: blue; */
+   
+   
+    height: 100px;
+    
+    padding: 20px;
+}
+.songlist ul li{
+    list-style: inside;
+    list-style-type: decimal;
+    color:white;
+    font-size: larger;
+    display: flex;
+}  
+.songlist ul li span{
+    margin: 30px 10vw;
+    text-align: center;
+    width: 20vw;
+}  
+.songlist ul li i{
+    position: relative;
+    top: 25px;
+    font-size: 40px;
+    color: chocolate;
+}
+
+.icon #vlm{
+    position: relative;
+    left: 20vw;
+}
+#songduration{
+    font-size: 20px;
+}
+#volumeSlider{
+    
+    /* rotate:-90deg; */
+    width:10vw;
+   
+   accent-color: blue;
+
+}
+#volume_level{
+    width: 50px;
+}    
+.icon img{
+    
+    height: 60px;
+    position: absolute;
+    left: 10vw;
+    bottom: 2vh;
+    border-radius: 50px;
+}
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+  }
+
+footer a{
+  color: red;
+}  

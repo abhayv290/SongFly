@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   
+    <title>Coming Soon-SongFly</title>
+    <link rel="shortcut icon" href="logo/pngwing.com.png" type="image/x-icon">
+
+</head>
+<style>
+    body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    /* color: white; */
+    background-color: #555353;
+}
+
+.coming-soon-card {
+    text-align: center;
+    padding: 20px;
+    border-radius: 10px;
+    color: blue;
+    background-image: linear-gradient(red,white,green);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    color: #620fe6;
+}
+
+p {
+    color: #620fe6;
+    
+    margin-top: 10px;
+}
+
+#countdown {
+    font-size: 24px;
+    margin-top: 20px;
+}
+
+</style>
+<body>
+    <div class="coming-soon-card">
+        <h1>Coming Soon</h1>
+        <p>Wait till the new songs launches so I can add them in this album</p>
+        <p>Thanks for your Patience</p>
+        <div id="countdown"></div>
+    </div>
+    <script>
+        // Set the date and time when the website will launch
+const launchDate = new Date("2023-09-01T00:00:00").getTime();
+
+function updateCountdown() {
+    const now = new Date().getTime();
+    const timeLeft = launchDate - now;
+
+    const days = Math.floor(timeLeft / (1000 * 60 * 60 * 24));
+    const hours = Math.floor((timeLeft % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+    const minutes = Math.floor((timeLeft % (1000 * 60 * 60)) / (1000 * 60));
+    const seconds = Math.floor((timeLeft % (1000 * 60)) / 1000);
+
+    document.getElementById("countdown").innerHTML = `${days}d ${hours}h ${minutes}m ${seconds}s`;
+}
+
+// Update the countdown every second
+setInterval(updateCountdown, 1000);
+
+// Initial update
+updateCountdown();
+
+    </script>
+</body>
+</html>
