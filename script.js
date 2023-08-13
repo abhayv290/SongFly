@@ -187,7 +187,7 @@ function duration(element) {
         else { songIndex++ }
 
 
-        // makeallplay();
+        
         newaudio.src = `Music/${songIndex}.mp3`;
         newaudio.play();
         document.getElementById('_img').src = songlist[songIndex - 1].coverpath;
@@ -195,6 +195,7 @@ function duration(element) {
         vlm.classList.add('fa-volume-high')
         playButton.classList.remove('fa-play-circle');
         playButton.classList.add('fa-pause-circle');
+        makeallplay();
         document.getElementById(songIndex).classList.remove('fa-play-circle');
         document.getElementById(songIndex).classList.add('fa-pause-circle');
 
@@ -203,7 +204,7 @@ function duration(element) {
 
         document.getElementById(parseInt(songIndex - 1)).classList.remove('fa-pause-circle');
         document.getElementById(parseInt(songIndex - 1)).classList.add('fa-play-circle');
-
+        
 
     })
     previous.addEventListener('click', (e) => {
@@ -214,7 +215,7 @@ function duration(element) {
         else { songIndex-- }
 
 
-        // makeallplay();
+        
         newaudio.src = `Music/${songIndex}.mp3`;
         newaudio.play();
         document.getElementById('_img').src = songlist[songIndex - 1].coverpath;
@@ -222,9 +223,10 @@ function duration(element) {
         vlm.classList.add('fa-volume-high')
         playButton.classList.remove('fa-play-circle');
         playButton.classList.add('fa-pause-circle');
+        makeallplay();
         document.getElementById(songIndex).classList.remove('fa-play-circle');
         document.getElementById(songIndex).classList.add('fa-pause-circle');
         document.getElementById(parseInt(songIndex + 1)).classList.remove('fa-pause-circle');
         document.getElementById(parseInt(songIndex + 1)).classList.add('fa-play-circle');
-
+        
     })
