@@ -80,7 +80,8 @@ let card = Array.from(document.getElementsByClassName('comingsoon'));
 card.forEach((element, i) => {
     // console.log(element, i)
     element.addEventListener('click', (element) => {
-        window.location = 'comingsoon.html';
+        const newWindow=window.open('',',_blank');
+        newWindow.location = 'comingsoon.html';
     })
 })
 
@@ -88,7 +89,9 @@ card.forEach((element, i) => {
 // #for getpremium page
 prm.style = 'cursor:pointer';
 prm.addEventListener('click', (e) => {
-    window.location = 'getpremium.html'
+    const newWindow = window.open('', '_blank');
+    newWindow.location = 'getpremium.html';
+    
 
 })
 
