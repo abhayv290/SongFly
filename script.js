@@ -230,3 +230,8 @@ function duration(element) {
         document.getElementById(parseInt(songIndex + 1)).classList.add('fa-play-circle');
         
     })
+
+
+// let none = document.getElementsByClassName('songitem').span[1];
+
+//     none.style = 'display:none'

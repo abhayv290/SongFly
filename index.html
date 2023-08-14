@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>SongFly-ListenUp and download your favorite song online</title>
-    
+
     <link rel="shortcut icon" href="logo/pngwing.com.png" type="image/x-icon">
     <link rel="stylesheet" href="style.css">
 </head>
@@ -13,19 +13,25 @@
 <body>
     <div class="upper">
         <nav>
-            <ul>
-                <li class="brand"><img src="logo/pngwing.com.png" height="50px"
-                            alt="logo"><span id="logo">SongFly</span></li>
-                <li>Login/SignUp</li>
-                <li><span id="prm" class="brdr">GetPremium</span></a></li>
-                <li><input type="text" name="search" id="inp" placeholder="Search for Songname Artist or play listplaylist"><span
-                        class="brdr">Search</span></li>
-            </ul>
+            <div class="left">
+                <ul>
+                    <li class="brand"><img src="logo/pngwing.com.png" height="50px" alt="logo"><span
+                            id="logo">SongFly</span></li>
+                    <li>Login/SignUp</li>
+                    <li><span id="prm" class="brdr">GetPremium</span></a></li>
+                </ul>
+            </div>
+            <div class="right">
+                <li><input type="text" name="search" id="inp"
+                        placeholder="Search for Songname Artist or play listplaylist"><span class="brdr">Search</span>
+                </li>
+            </div>
+
         </nav>
     </div>
     <div class="bottom">
-        <nav>
-            <ul id="br">
+        <nav id="menu-bar">
+            <ul class="menu" id="br">
                 <li class="comingsoon">TrendingToday</li>
                 <li class="comingsoon"> International Hits</li>
                 <li class="comingsoon">Mood kinda Bollywoood</li>
@@ -41,22 +47,29 @@
         <div class="titl">
 
             <img src="Image/WhatsApp-Image-2022-12-07-at-7.42.08-PM.jpeg" alt="TrendingToday">
-           <div class="trend">
+            <div class="trend">
                 <h4>Public play listplaylist</h4><br>
                 <h1>TrendingToday</h1>
                 <h3><i class="fa-solid fa-headphones"></i> Made for You</h3>
             </div>
         </div>
         <div class="songlist">
-          <ul id="songlst">
-           <li class="songitem"><img src=""  height="80px" alt=""><span> </span><span>3:10min</span><i id="1" class="fa-solid fa-circle-play listplay"  ></i></li>
-           <li class="songitem"><img src=""  height="80px" alt=""><span></span><span>3:1min</span><i id="2" class="fa-solid fa-circle-play listplay"  ></i></li>
-           <li class="songitem"><img src=""  height="80px" alt=""><span></span><span>3:3min</span><i id="3" class="fa-solid fa-circle-play listplay"  ></i></li>
-           <li class="songitem"><img src=""  height="80px" alt=""><span></span><span>3:20min</span><i id="4" class="fa-solid fa-circle-play listplay"  ></i></li>
-           <li class="songitem"><img src=""  height="80px" alt=""><span></span><span>2:51min</span><i id="5" class="fa-solid fa-circle-play listplay"  ></i></li>
-           <li class="songitem"><img src=""  height="80px" alt=""><span></span><span>3:21min</span><i id="6" class="fa-solid fa-circle-play listplay"  ></i></li>
-           <li class="songitem"><img src=""  height="80px" alt=""><span> </span><span>3:8min</span><i id="7" class="fa-solid fa-circle-play listplay"  ></i></li>
-          </ul>
+            <ul id="songlst">
+                <li class="songitem"><img src="" height="80px" alt=""><span> </span><span>3:10min</span><i id="1"
+                        class="fa-solid fa-circle-play listplay"></i></li>
+                <li class="songitem"><img src="" height="80px" alt=""><span></span><span>3:1min</span><i id="2"
+                        class="fa-solid fa-circle-play listplay"></i></li>
+                <li class="songitem"><img src="" height="80px" alt=""><span></span><span>3:3min</span><i id="3"
+                        class="fa-solid fa-circle-play listplay"></i></li>
+                <li class="songitem"><img src="" height="80px" alt=""><span></span><span>3:20min</span><i id="4"
+                        class="fa-solid fa-circle-play listplay"></i></li>
+                <li class="songitem"><img src="" height="80px" alt=""><span></span><span>2:51min</span><i id="5"
+                        class="fa-solid fa-circle-play listplay"></i></li>
+                <li class="songitem"><img src="" height="80px" alt=""><span></span><span>3:21min</span><i id="6"
+                        class="fa-solid fa-circle-play listplay"></i></li>
+                <li class="songitem"><img src="" height="80px" alt=""><span> </span><span>3:8min</span><i id="7"
+                        class="fa-solid fa-circle-play listplay"></i></li>
+            </ul>
         </div>
 
 
@@ -65,27 +78,27 @@
 
     </div>
     <div class="musicbar">
-        <input type="range" name="range"  id="myprogressbar">
+        <input type="range" name="range" id="myprogressbar">
 
         <div class="icon">
-           <img id="_img" src=""  >
+            <img id="_img" src="">
             <span id="songduration"></span>
             <!-- fontawesome icons -->
 
             <i class="fa-solid fa-backward" id="previous"></i>
-            <i class="fa-solid fa-circle-play" id="playButton" > </i>
+            <i class="fa-solid fa-circle-play" id="playButton"> </i>
             <i class="fa-solid fa-forward" id="next"></i>
             <i class="fa-solid fa-volume-off" id="vlm"></i>
-           
+
             <input type="range" id="volumeSlider" min="0" max="1" step="0.01" value="1">
             <span id="volume_level"></span>
         </div>
     </div>
     <footer>
-        <p>&copy; 2023 SongFly. All rights reserved.   <a href="https://www.linktr.ee/abhayvii">Contact us</a></p>
-        
+        <p>&copy; 2023 SongFly. All rights reserved. <a href="https://www.linktr.ee/abhayvii">Contact us</a></p>
 
-      </footer>
+
+    </footer>
 </body>
 <script src="https://kit.fontawesome.com/3e87cae5ed.js" crossorigin="anonymous"></script>
 <script src="script.js"></script>

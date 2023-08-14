@@ -8,20 +8,28 @@
 .upper{
     background-color: rgb(234, 233, 233);
     border-bottom: 4px solid rgb(172, 169, 169);
-    height: 75px;
+    height: 15vh;
     position: sticky;
     top: 0;
     z-index: 2;
 }
+.upper nav{
+    display: flex;
+    align-items: center;
+}
+    
 
-.upper nav ul{
+ .left ul, .right{
     display: flex;
     list-style: none;
     /* margin: 20px; */
 }
-.upper nav ul li{
+.left ul li{
     margin: 20px;
     /* padding: 5px; */
+}
+.right li{
+    float: right;
 }
 #inp{
     padding: 10px;
@@ -115,7 +123,7 @@
     border: 1px solid red;
 }
 .titl img{
-    height: 170px;
+    height: 150px;
     margin:20px;
    
 }
@@ -156,7 +164,7 @@
 .songlist ul li i{
     position: relative;
     top: 25px;
-    font-size: 40px;
+    font-size: 10vw;
     color: chocolate;
 }
 
@@ -202,3 +210,68 @@ footer {
 footer a{
   color: red;
 }  
+
+@media only screen and (max-width:450px) {
+    .upper nav {
+        flex-direction: column;
+    }
+    .right{
+        position: relative;
+        top: -3vh;
+    }
+    #inp{
+        width: 60vw;
+    }
+    .trend{
+        display: none;
+    }
+   
+   .songitem span:nth-child(3){
+    display: none;
+   }
+   .bottom nav ul{
+    flex-direction: column;
+   }
+   .menu-bar {
+    background-color: #333;
+  }
+  
+  .menu {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+  }
+  
+  .menu li {
+    margin: 0;
+    padding: 0;
+  }
+  
+  .menu li  {
+    display: block;
+    padding: 15px 20px;
+    color: #1b093c;
+    text-decoration: none;
+  }
+  
+  .menu li :hover {
+    background-color: #366d30;
+  }
+  .icon i{
+    width: 7vw;
+}
+#volume_level{
+    display: none;
+}
+
+#songduration {
+    left: 97px;
+    top: -36px;
+}
+
+
+}
+    
+
+
