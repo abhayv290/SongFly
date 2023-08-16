@@ -179,6 +179,7 @@ function duration(element) {
 
 
     // Now turn on the next and previous button
+    // Next button 
     next.addEventListener('click', (e) => {
 
         if (songIndex > 6) {
@@ -207,6 +208,7 @@ function duration(element) {
         
 
     })
+    // Previous button 
     previous.addEventListener('click', (e) => {
 
         if (songIndex <= 1) {
