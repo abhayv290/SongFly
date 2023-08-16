@@ -31,7 +31,8 @@
     margin: 20px 2vw;
     /* padding: 5px; */
 }
-.right li{
+.right i{
+    display: none;
    
 }
 #inp{
@@ -229,6 +230,7 @@ footer a{
        
     }
   .right i{
+    display:unset;
     position: relative;
     /* top: 20px; */
     bottom: 33px;
